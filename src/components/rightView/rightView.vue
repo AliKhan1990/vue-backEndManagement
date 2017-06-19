@@ -19,7 +19,7 @@
             <el-card class="card" :body-style="{ padding: '0px' }">
               <img style="width: 100%" src="./coffe.jpg" class="image">
               <div style="padding: 14px;">
-                <span class="cart-title">“互联网+智慧社区”建设 让居民共享微时代的便捷</span>
+                <p class="cart-title">“互联网+智慧社区”建设 让居民共享微时代的便捷</p>
                 <div class="bottom clearfix">
                   <time class="time">May 2, 2017	</time>
                   <p>{{text.substring(0, 100) + '...'}}</p>
@@ -278,6 +278,7 @@
     .myWork {
       text-align: left;
       position: relative;
+      font-size: .32rem;
       span.line {
         position: absolute;
         bottom: -5px;
@@ -330,6 +331,7 @@
         height: 10rem;
       }
       .card-title {
+        font-size: .28rem;
         margin: 10px 0;
         text-align: left;
         padding-left: 10px;
@@ -338,6 +340,7 @@
       overflow: scroll;
       .cart-title {
         font-size: .2rem;
+        line-height: .4rem;
       }
       time {
         font-size: .18rem;
@@ -415,8 +418,27 @@
       height: .5rem;
     }
     .el-checkbox__inner::after {
-      top: .13rem;
-      left: .2rem;
+      box-sizing: content-box;
+      content: "";
+      border: 2px solid #fff;
+      border-left: 0;
+      border-top: 0;
+      height: .25rem;
+      left: 30%;
+      position: absolute;
+      top: 10%;
+      -ms-transform: rotate(45deg) scaleY(0);
+      transform: rotate(45deg) scaleY(0);
+      width: .15rem;
+      transition: transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+      -ms-transform-origin: center;
+      transform-origin: center;
+    }
+    .fc-center{
+      font-size: .2rem;
+    }
+    .fc-toolbar.fc-header-toolbar{
+      margin-bottom: .1rem;
     }
   }
 

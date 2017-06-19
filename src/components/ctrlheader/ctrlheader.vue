@@ -53,6 +53,12 @@
 
 <style lang="less" rel="stylesheet/less">
   .header {
+    .bar{
+      position: relative;
+      a{
+        position: absolute;
+      }
+    }
     @media screen and (max-width: 768px ) {
       .worktable {
         img {
@@ -65,7 +71,7 @@
       justify-content: space-between;
     }
 
-    height: 1rem;
+    height: .9rem;
 
     .title {
       font-size: .2rem;

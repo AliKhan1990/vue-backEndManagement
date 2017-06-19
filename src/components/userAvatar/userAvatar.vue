@@ -36,7 +36,6 @@
         color:#31c27c;
         outline: 0;
         text-decoration: none;
-        margin: .3rem .2rem;
       }
       margin-bottom: .3rem;
     }
